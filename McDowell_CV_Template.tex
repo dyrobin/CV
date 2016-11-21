@@ -128,3 +128,5 @@
 %	\end{cvsection}
 
 \end{document}
+
+I built a small full IP network to make different radio-type devices communicate directly. The scenario worked like this: if a Zigbee motion detector finds people moving then another Zigbee light is switched on and a WiFi camera starts to work. The scenario itself is simple but the amazing part is that no gateway was used to connect them. Instead, every device had its own auto-configured IP address and was able to be controlled by any device on the Internet, for example, a laptop, a cell phone or even an application server. The controlling protocol is CoAP, an HTTP-like protocol specially designed for future IoT. Comparing to traditional gateway, full IP network will decrease the system complexity greatly as it doesn’t need to maintain different stacks for different radios. This prototyped network is actually an extension of 6LoWPAN and as Bluetooth SIG declare that IP will be supported in their future I believe full IP network will become the mainstream connectivity solution.
