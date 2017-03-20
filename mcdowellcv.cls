@@ -29,7 +29,7 @@
 \ProvidesClass{mcdowellcv}[2017/03/16 v0.1 McDowell CV class]
 
 % Set up the fonts according to options
-\def\mainfontsize{10pt}
+\def\mainfontsize{11pt}
 \def\mainfontface{Times New Roman}
 
 \DeclareOption{osx}{
@@ -120,7 +120,7 @@
 % Address
 \newcommand\address[1]{\def\@address{#1}}
 \newcommand\printaddress{
-	\themecolornormal{\small{\@address}}
+	\themecolornormal{\footnotesize{\@address}}
 }
 
 % Name
@@ -132,7 +132,7 @@
 % Contacts
 \newcommand\contacts[1]{\def\@contacts{#1}}
 \newcommand\printcontacts{
-	\themecolornormal{\small{\@contacts}}
+	\themecolornormal{\footnotesize{\@contacts}}
 }
 
 % Header

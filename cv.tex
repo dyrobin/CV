@@ -1,35 +1,20 @@
-%% The MIT License (MIT)
-%%
-%% Copyright (c) 2015 Daniil Belyakov
-%%
-%% Permission is hereby granted, free of charge, to any person obtaining a copy
-%% of this software and associated documentation files (the "Software"), to deal
-%% in the Software without restriction, including without limitation the rights
-%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%% copies of the Software, and to permit persons to whom the Software is
-%% furnished to do so, subject to the following conditions:
-%%
-%% The above copyright notice and this permission notice shall be included in all
-%% copies or substantial portions of the Software.
-%%
-%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-%% SOFTWARE.
 
-% The font could be set to Windows-specific Calibri by using the 'calibri' option
-\documentclass[]{mcdowellcv}
+% Select 'print' for paper-printing version
+\documentclass[print]{mcdowellcv}
 
 % For mathematical symbols
 \usepackage{amsmath}
 
-% Set applicant's personal data for header
-\name{YANG \hspace{2mm} DENG}
-\address{}
-\contacts{+358 (0) 50 5628551 \linebreak yang@lumo.co.com}
+% Disable hyphenation
+\usepackage[none]{hyphenat}
+
+% For GitHub and LinkedIn
+\usepackage{fontawesome}
+\usepackage[hidelinks,baseurl=https://]{hyperref}
+
+\name{Yang Deng}
+\address{\mbox{\faGithub\quad\url{github.com/dyrobin}} \linebreak \mbox{\faLinkedin\quad\url{linkedin.com/in/dyrobin}}}
+\contacts{+358 (0) 50 5628551 \linebreak \url{yang.r.deng@gmail.com}}
 
 \begin{document}
 
@@ -38,94 +23,95 @@
 	
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Researcher}{Aalto University}{September 2011 -- October 2016}
-			Adaptive Packet Size Control for 6LoWPAN (2014 - 2016)
+		\begin{cvsubsection}{Software Architect}{LUMO Connections}{Nov. 2016 -- Apr. 2017}
+			Lamp for Long Distance Relationships
 			\begin{itemize}
-				\item Analyzed fragment issue of data transmission in 6LoWPAN
-				\item Designed a \textquotedblleft linear first then exponential\textquotedblright \space algorithm to improve the throughput by 40\% at best
-				\item Published a paper on EWSN (best sensor network conference in Europe, also famous in the world)
+				\item Built up a Node.js communication system including a client on Raspberry Pi and a server on Amazon EC2
+				\item Responsible for design and implementation of communication module that integrates with WiFi manager and 
+				sends real-time messages via WebSocket on ESP8266 (NodeMCU)
 			\end{itemize}
+		\end{cvsubsection}
+			
+		\begin{cvsubsection}{Software Engineer, Researcher}{Aalto University}{Sept. 2011 -- Oct. 2016}
+			Adaptive 6LoWPAN Packet Size Control (2014 - 2016)
+			\begin{itemize}
+				\item Developed a SciPy tool to process massive measurement data and analyze 6LoWPAN fragmentation issue
+				\item Designed and implemented a \textit{first linear then exponential} packet size control mechanism that improves throughput by 40\% in best case
+				\item Published and presented a paper in EWSN2015 (best conference on wireless sensor networks in Europe)
+			\end{itemize}
+			\smallskip
 			Multicast for Constrained Networks (2013 - 2015)
 			\begin{itemize}
-				\item Implemented simplified MLD on Contiki OS
-				\item Evaluated performance of MPL and flooding in terms of different metrics
-				\item Developed a simple multicast protocol for constrained network based on PIM-SSM
+				\item Implemented a simplified IPv6 Multicast Listener Discovery on Contiki OS
+				\item Established a testbed for MPL (RFC7731) and evaluated its performance against flooding 
+				\item Designed and implemented a simple multicast protocol for constrained networks based on PIM-SSM
 			\end{itemize}
+			\smallskip
 			MAMMoTH - Massive Scale Machine to Machine Service (2011 - 2013)
 			\begin{itemize}
-				\item Implemented an HTTP-CoAP mapping layer on Contiki OS
-				\item Deployed more than 1000 emulated and real constrained devices on the platform
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Web Administrator}{CSSA-Espoo ry}{January 2012 -- December 2015}
-			\begin{itemize}
-				\item Maintained a phpBB forum that provides information for all Chinese students in Greater Helsinki
-				\item Created a customized WordPress website for the organization
+				\item Implemented a basic HTTP-CoAP mapping layer on Contiki OS
+				\item Deployed around 1000 emulated constrained devices to verify the scalability of the platform
 			\end{itemize}
 		\end{cvsubsection}
 
-		\begin{cvsubsection}{Software Engineer}{Nokia Research Center, China}{May 2010 -- August 2011}
-			Rich Context Mobile Platform			
+		\begin{cvsubsection}{Software Engineer}{Nokia Research Center, China}{Nov. 2008 -- Aug. 2011}
+			Rich Context Mobile Platform (2010 - 2011)
 			\begin{itemize}
 				\item Designed and implemented a publish-subscribe messaging mechanism and a QT GUI on N900 device
-				\item Filed a patent application on inter-widget communication
+				\item Filed a patent (US 20140237486 A1) on inter-widget communication
+			\end{itemize}
+			\smallskip
+			Handwriting Calculator (2009 - 2010)
+			\begin{itemize}
+				\item Developed GTK+ GUI (including formula display and stylus gestures) on Maemo platform
+				\item Published on Nokia Beta Labs and won outstanding project award
 			\end{itemize}
 		\end{cvsubsection}
 
-		\begin{cvsubsection}{Software Tester, Intern}{IBM Corporation, China}{June 2009 -- September 2009}
+		\begin{cvsubsection}{Software Tester, Intern}{IBM Corporation, China}{June 2008 -- Aug. 2008}			
 			\begin{itemize}
-				\item Localization and globalization testing for Lotus Software
-				\item Wrote a PERL script to detect empty translations of the content
+				\item Localization and globalization testing for IBM Lotus software
+				\item Developed a Perl tool to detect empty translations of the content
 			\end{itemize}
 		\end{cvsubsection}
-				
-		\begin{cvsubsection}{Software Engineer, Intern}{Nokia Corporation, China}{Noverber 2007 -- December 2008}
-			Handwriting Calculator
+	\end{cvsection}
+
+	\begin{cvsection}{Additional Experience}
+		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item Developed GTK+ GUI (including formula display layout and stylus handy gestures) on Maemo platform
-				\item Won outstanding project award issued by Nokia Research Center 
+				\item Web Developer (2016): Built an e-commerce website (\url{store.kanssani.fi}) by WooCommerce
+				\item Website Administrator(2012 - 2016): Maintained a forum for \href{https://cssa.ayy.fi}{CSSA-Espoo}
+				(once largest Chinese student community in Greater Helsinki area)
+				\item Teaching Assistant (2015): Taught two course assignments (P2P networking and WiFi indoor positioning)
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
 	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Espoo, Finland}{Aalto University}{September 2011 -- May 2016}
+		\begin{cvsubsection}{Espoo, Finland}{Aalto University}{Sept. 2011 -- Aug. 2016}
 			\begin{itemize}
-				\item Licentiate candidate in Computer Science and Engineering. GPA: 4.77/5 \newline
-				Thesis: Enhancement of 6LoWPAN Transmission in Lossy and Low Power Networks
+				\item Licentiate degree candidate in Computer Science and Engineering. GPA: 4.77/5
 			\end{itemize}
 		\end{cvsubsection}
 
-		\begin{cvsubsection}{Beijing, China}{Beijing University of Posts and Communications}{September 2003 --  April 2010}
-			\vspace{0.2cm}
+		\begin{cvsubsection}[2]{Beijing, China}{Beijing University of Posts and Communications}{Sept. 2003 --  Apr. 2010}
 			\begin{itemize}
-				\item M.S.E in Computer Networking. GPA: 4.0/5 \newline
-				 Thesis: Research on Architecture of Telecom Mashup Platform. Grade: outstanding
-				\item B.S.E in Computer Science and Engineering. GPA: 4.4/5 \newline
-				Thesis: Client Implementation in Video Monitoring System. Grade: outstanding
+				\item M.S.E in Computer Networking, April 2010. GPA: 4.0/5				 
+				\item B.S.E in Computer Science and Engineering, June 2007. GPA: 4.4/5
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	\begin{cvsection}{Additional Experience}
+	\begin{cvsection}{Skills}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item Web Developer (2016): Built an e-commerce website by WooCommerce for Kanssani
-				\item Teaching Assistant (2015): Taught two assignments (P2P networking and indoor position by WIFI fingerprint)
-				\item Thesis Instructor (2013 - 2014): Instructed two master students' theses on sensor networking
+				\item Languages: C; C++; Java; Unix Shell; Python; PHP; JavaScript; XML; HTML/CSS; SQL
+				\item Platform: Unix/Linux; Contiki/Arduino embedded devices
+				\item Networking: 802.15.4; 6LoWPAN; TCP/IP; HTTP; CoAP; RESTful API; Apache
+				\item Tools: Makefile; Git
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
-%	\begin{cvsection}{Languages and Technologies}
-%		\begin{cvsubsection}{}{}{}	
-%			\begin{itemize}
-%				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-%				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
-%			\end{itemize}
-%		\end{cvsubsection}
-%	\end{cvsection}
 
 \end{document}
 
