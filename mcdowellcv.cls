@@ -33,7 +33,7 @@
 \def\mainfontface{Times New Roman}
 
 \DeclareOption{osx}{
-  \def\mainfontface{HelveticaNeueDeskInterface}
+  \def\mainfontface{Times}
 }
 
 \DeclareOption{win}{
