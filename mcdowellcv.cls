@@ -50,7 +50,7 @@
 \LoadClass[a4paper,\mainfontsize]{article}
 
 % Set document margins
-\usepackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.3in]{geometry} 
+\usepackage[left=0.75in,top=0.75in,right=0.75in,bottom=1in]{geometry} 
 
 % Set font face
 \usepackage{fontspec}
@@ -101,10 +101,10 @@
 %--------------------------------------------------------------------------------
 %                                    Constants                                  -
 %--------------------------------------------------------------------------------
-\def\afterheaderspace{3pt} %3pt
+\def\afterheaderspace{0.3in} %3pt
 \def\beforesectionheaderspace{4.75pt} %4.75pt
 \def\sectionheadermargin{6pt} %6pt
-\def\aftersectionheaderspace{-0.5\parskip} %-4pt
+\def\aftersectionheaderspace{-0\parskip} %-4pt
 \def\sectionheaderhrlueheight{0.75pt} %0.5pt
 \def\aftersinglelinesubsectionheaderspace{-1\parskip} %-18.5pt
 \def\afterdoublelinesubsectionheaderspace{-0.5\parskip} %-10pt

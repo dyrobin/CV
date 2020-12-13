@@ -17,33 +17,38 @@
 \contacts{+358 (0) 50 4424616 \linebreak \url{yang.r.deng@gmail.com}}
 
 \begin{document}
-
 	% Print the header
 	\makeheader
 	
 	% Print the content
+	\begin{cvsection}{Profile}
+		\begin{cvsubsection}{}{}{}	
+		I am a dedicated and quality-minded software engineer with many years experience in product development using modern technologies. I have a clear logical mind to take a practical approach to problem-solving and a strong willingness to make the solutions come into effect. I am never afraid of new things and often my solid programming knowledge will help me learn them faster. Also, I am an enthusiast of agile development and I believe fast iteration is the core competence of the team and the product it develops. Currently I am looking for an opportunity to utilize my skills in a challenging working environment and become a valuable asset to the organisation that I work for.
+		\end{cvsubsection}	
+	\end{cvsection}
 	\begin{cvsection}{Employment}
 		\begin{cvsubsection}{Senior Software Engineer}{Helvar}{May 2017 -- Present}
 			Lighting Intelligence Platform
 			\begin{itemize}
-				\item Developed 2 internal libraries (rabbitmq-client and logger) and published them into company's NPM registry (Both have 100\% test coverage and are widely used within the team)
-				\item Developed 2 out of 3 components of ActiveAhead controller where each component works as a microservice that employs RabbitMQ as message broker and Redis as database
-				\item Wrote scripts to build/configure/deploy/run ActiveAhead controller (Docker image)
-				\item Co-designed/developed parts of cloud backend and API endpoints where many Amazon Web Services are involved, for example Lambda, DynamoDB, IoT Core, Kinesis, S3, ElasticSerarch, API Gateway, etc
-				\item Built up end-to-end/integration testing framework using PyTest and integrated with Jenkins pipeline
-				\item Scrum master (>1.5 years)
+			    \item Designed and implemented (Node.js) components of cloud gateway for ActiveAhead wireless lighting system where each component runs as a microservice and RabbitMQ is used as message broker and Redis as database. The gateway uses AWS IoT not only for communication but also for other tasks like gateway provisioning/registration, certificate management, software update, access control, etc.
+				\item Created scripts (Makefile, Bash, Python) to build, configure, deploy and run cloud gateway using Docker image/container
+				\item Developed parts of cloud backend using AWS Lambda, co-designed schema of AWS DynamoDB (NoSQL) and AWS RDS (SQL) tables, formed feature stack where other AWS services are used, for example S3, Kinesis, ElasticSerarch, API Gateway, Elastic Container Registry, CloudWatch, IAM, etc
+				\item Authored two internal libraries (rabbitmq-client and logger) and published them into company's NPM registry (both have 100\% test coverage and are widely used within the team)
+				\item Built integration and end-to-end testing frameworks using PyTest (Python) and collaborated with Devops in Jenkins integration
+				\item Contributed definition of development procedure where coding style, code quality check (SonarQube), unit test coverage, CI/CD, Git flow, release process are involved
+				\item Worked with both Scrum and Kanban, acted as scrum master for more than 1 year
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Software Engineer}{LUMO Connections}{Nov. 2016 -- Apr. 2017}
+		\begin{cvsubsection}{Software Engineer}{LUMO Connections}{Nov. 2016 -- Apr. 2017}	
 			Smart Lamp
 			\begin{itemize}
-				\item Implemented RESTful APIs by Node.js Express on Raspberry Pi
-				\item Developed a tiny HTTP server that integrated with WiFi manager on ESP8266 (NodeMCU)
+				\item Implemented RESTful APIs by Express framework (Node.js) on Raspberry Pi
+				\item Developed a tiny HTTP server (C/C++) that integrated with WiFi manager on ESP8266 (NodeMCU)
 			\end{itemize}
 		\end{cvsubsection}
 			
-		\begin{cvsubsection}{Software Engineer, Researcher}{Aalto University}{Sept. 2011 -- Oct. 2016}
+		\begin{cvsubsection}{Software Engineer, Researcher}{Aalto University}{Sept. 2011 -- Oct. 2016}	
 			Adaptive 6LoWPAN Packet Size Control
 			\begin{itemize}
 				\item Applied SciPy to analyse and visualize massive 6LoWPAN packet data
@@ -57,9 +62,15 @@
 				\item Established a test bed for MPL (RFC7731) and evaluated its performance against flooding 
 				\item Drafted a simplified multicast protocol for constrained networks based on PIM-SSM
 			\end{itemize}
+			\smallskip
+			MAMMOTH - Massive Scale Machine to Machine Service
+			\begin{itemize}
+				\item Implemented an HTTP-CoAP mapping layer on Contiki OS
+				\item Deployed more than 1000 emulated and real constrained devices on the platform
+			\end{itemize}
 		\end{cvsubsection}
 
-		\begin{cvsubsection}{Software Engineer}{Nokia Research Center (Beijing)}{Nov. 2008 -- Aug. 2011}
+		\begin{cvsubsection}{Software Engineer}{Nokia Research Center}{Nov. 2009 -- Aug. 2011}	
 			Rich Context Mobile Platform
 			\begin{itemize}
 				\item Developed a publish-subscribe messaging mechanism for widgets on N900
@@ -72,13 +83,19 @@
 				\item Released on Nokia Beta Labs and won outstanding project award
 			\end{itemize}
 		\end{cvsubsection}
-
+		
+		\begin{cvsubsection}{Software Engineer, Intern}{IBM}{June 2009 -- Sept. 2009}	
+			\begin{itemize}
+				\item Tested localization and globalization translations for Lotus Software
+				\item Developed a Perl script to detect empty translations of the content
+			\end{itemize}
+		\end{cvsubsection}
 	\end{cvsection}
 
-	\begin{cvsection}{Additional Experience}
+	\begin{cvsection}{Additional Project Experience}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item Web Developer (2018): Developed a commission calculation website based on LAMP
+				\item Web Developer (2017): Developed a LAMP website to calculate sales commission for 3 tourist retails
 				\item Web Developer (2016): Built an e-commerce website (\url{store.kanssani.fi}) using WooCommerce
 				\item Website Administrator (2012 - 2016): Maintained a phpBB forum for scholar and student community
 				\item Teaching Assistant (2015): Taught two course assignments (P2P networking and WiFi positioning)
@@ -104,19 +121,12 @@
 	\begin{cvsection}{Skills}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item Programming: Git, JavaScript, Python, Shell script, C/C++
-				\item Knowledge: Scrum, Kanban, Microservices, TDD/BDD, RESTful API, Docker, OOP, DevOps
+				\item Programming: JavaScript(Node.js), Python, Bash, C/C++, Java
+				\item Platform: Unix/Linux, AWS services, Docker
+				\item Utilities: MySQL, NoSQL (Redis, DynamoDB, ElasticSearch), RabbitMQ
+				\item Tools: Git, GNU Make, Jenkins, Sonarqube, Jira, VSCode
+				\item Knowledge: Scrum, Kanban, Microservices, TDD/BDD, RESTful API, OOP, DevOps
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 \end{document}
-
-
-		\begin{cvsubsection}{Intern}{IBM China}{June 2008 -- Sept. 2008}			
-			\begin{itemize}
-				\item Localization and globalization testing for IBM Lotus software
-				\item Developed a Perl tool to detect empty translations of the content
-			\end{itemize}
-		\end{cvsubsection}
-
-
