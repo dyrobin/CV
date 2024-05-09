@@ -193,6 +193,7 @@
 	\togglefalse{centertitledefined}
 	\togglefalse{righttitledefined}
 	\begin{adjustwidth}{\subsectionmargin}{\subsectionmargin}
+        \vspace*{\aftersubsectionspace}
 }
 {
 	\end{adjustwidth}
